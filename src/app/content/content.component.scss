@@ -1,0 +1,31 @@
+.container-fluid {
+    .json-holder {
+        min-width: 250px;
+        border: 1px solid #007bff;
+        border-radius: 5px;
+
+        .textarea {
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .action-holder {
+        min-width: 100px;
+        max-width: 100px;
+
+        .action-btn {
+            width: 90px;
+            white-space: normal;
+        }
+    }
+    .result-holder {
+        min-width: 250px;
+        border: 1px solid #007bff;
+        border-radius: 5px;
+
+        .textarea {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}

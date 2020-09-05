@@ -1,0 +1,24 @@
+<div class="container-fluid mt-5 mb-5">
+    <div class="d-flex flex-row flex-wrap">
+        <div class="json-holder flex-grow">
+            <textarea id="ids" rows="22" class="form-control textarea" #rawTextarea
+                (keydown)="rawTextareaKeydown($event)"></textarea>
+        </div>
+        <div class="action-holder d-flex flex-column justify-content-center align-items-center">
+            <button type="button" class="btn btn-primary btn-sm m-2 p-1 action-btn" (click)="format()">
+                Format</button>
+            <button type="button" class="btn btn-primary btn-sm m-2 p-1 action-btn"
+                (click)="stringify()">Stringify</button>
+            <button type="button" class="btn btn-primary btn-sm m-2 p-1 action-btn" (click)="serialize()">
+                Serialize</button>
+            <button type="button" class="btn btn-primary btn-sm m-2 p-1 action-btn" (click)="deserialize()">
+                Deserialize</button>
+            <button type="button" class="btn btn-primary btn-sm m-2 p-1 action-btn" (click)="deserializeAndFormat()">
+                Deserialize & Format</button>
+        </div>
+        <div class="result-holder flex-grow">
+            <textarea rows="22" class="form-control light-bg textarea" disabled #resultTextarea
+                (keydown)="resultTextareaKeydown($event)"></textarea>
+        </div>
+    </div>
+</div>
